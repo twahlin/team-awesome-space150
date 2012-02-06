@@ -1,0 +1,244 @@
+@import "compass/css3";
+//------------------------------------------------------------------
+//Reset
+//------------------------------------------------------------------
+html,body,#wrap{height:100%}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1em}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}a{text-decoration:none}input,textarea{border:none;outline:none;margin:0;padding:0}
+
+//------------------------------------------------------------------
+//Mixins
+//------------------------------------------------------------------
+
+
+@mixin transition-default { @include transition-property(all); @include transition-duration(0.3s); @include transition-timing-function(ease-in); }
+
+//------------------------------------------------------------------
+//Styles
+//------------------------------------------------------------------
+
+html {
+  //a4dcc6 
+  background: url(../images/bg-pattern.png);
+  font-family: "ff-tisa-web-pro",serif;
+  font-style: normal;
+  font-weight: 400;
+/*  color: #C6A49A;*/
+}
+
+section {
+  background: rgba(255, 255, 255, .5);
+  height: 2000px;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+  @include border-radius(2px);
+}
+
+h1, h2, h3, h4 {
+  font-family: "league-gothic",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;  
+}
+
+.button-example-css3 {
+  border: 1px solid #6f9dc0;
+  background: #6caddf;
+  color: #fff;
+  cursor: pointer;  
+  font-size: 14px;
+  padding: 7px 12px 6px 12px;
+  line-height: 34px;
+  text-decoration: none;
+
+  @include border-radius (3px);
+  @include box-shadow(rgba(0, 0, 0, .2) 0 0 8px, inset rgba(207, 233, 254, 1) 0 1px 0);
+  @include background(linear-gradient(rgba(153,204,245, 1), rgba(129,181,220, 1))); 
+  @include text-shadow(#4c88b6 0 -1px 1px);
+  @include transition-default;
+}
+
+.button-example-css3:hover {
+  background: #8acbfc;
+  color: #fff;
+  text-decoration: none;
+  @include box-shadow(rgba(0, 0, 0, .35) 0 0 8px, inset rgba(220, 243, 255, 1) 0 1px 0);
+  @include background(linear-gradient(rgba(163,214,255, 1), rgba(139,191,230, 1)));
+}
+
+.three-dee-text {
+  color: #fff;
+  cursor: pointer;
+  font-size: 80px;
+  line-height: 80px;
+  text-align: center; 
+  font-weight: 600;
+   
+  @include transition-default; 
+}
+
+.three-dee-text:hover {
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+  background: #3f3f3f url(wood-bg.png);
+  font-family: Helvetica, Arial, Sans-Serif;
+}
+
+h1 {
+  font-size: 50px; text-transform: uppercase; color: #717171;
+  text-shadow: 0 3px 3px #333; margin: 50px 0 0 0; text-align: center;
+}
+#browser {
+  margin: 0 auto; text-align: center;
+  text-shadow: 0 3px 3px #333;
+}
+  #browser em {
+    font: italic 26px Georgia, Serif; color: #666; 
+  }
+
+#transformers-rule {
+  width: 750px; position: relative; margin: 50px auto;
+}
+
+.container {
+  width: 324px; height: 412px;
+  -webkit-perspective: 1000;
+}
+
+.card {
+  width: 324px; height: 412px;
+  border: 8px solid #fff; 
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+  .container:hover .card {
+    -webkit-transform: rotateY(180deg);       
+  }
+
+.face {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+
+
+.megatron {
+  float: left; position: absolute; top: 30px; left: 20px;
+  -webkit-transform: rotate(5deg);
+}
+  .megatron .front {
+    
+  }
+  .megatron .back {
+    width: 284px; height: 372px; padding: 20px;
+    -webkit-transform: rotateY(180deg);
+    background: #a3a3a3 url(texture.png); 
+  }
+    .megatron .back h2 {
+      width: 287px; height: 42px; margin: 0 auto 20px auto;
+      background: url(megatron-title.png); text-indent: -9999px; 
+    }
+    .megatron img {
+      float: right;
+    }
+    .megatron p {
+      float: left; width: 185px; margin: 0 0 20px 0;
+      font-size: 17px; line-height: 28px; color: #4c4c4c; 
+    }
+    .megatron dl {
+      font-size: 30px; font-weight: bold; 
+      line-height: 40px; color: #717171;
+      width: 264px; padding: 5px 10px; overflow: hidden; 
+      background: #cfcfcf url(gradient.png) repeat-y;
+      -webkit-box-shadow: 0 1px 5px #888;
+      text-shadow: 0 1px 1px #f5f5f5;
+    }
+      .megatron dl dt {
+        float: left; clear: both;
+      }
+      .megatron dl dd {
+        float: right;
+      }
+
+  
+.optimus {
+  float: left; position: absolute; top: 120px; right: 20px;
+  -webkit-transform: rotate(-3deg);
+}
+  .optimus .front {
+    
+  }
+  .optimus .back {
+    width: 284px; height: 372px; padding: 20px;
+    -webkit-transform: rotateY(180deg);
+    background: #a3a3a3 url(texture.png); 
+  }
+    .optimus .back h2 {
+      width: 292px; height: 33px; margin: 0 auto 20px auto;
+      background: url(optimus-title.png); text-indent: -9999px; 
+    }
+    .optimus img {
+      float: right;
+    }
+    .optimus p {
+      float: left; width: 185px; margin: 0 0 27px 0;
+      font-size: 17px; line-height: 28px; color: #4c4c4c; 
+    }
+    .optimus dl {
+      font-size: 30px; font-weight: bold; 
+      line-height: 40px; color: #717171;
+      width: 264px; padding: 5px 10px; overflow: hidden; 
+      background: #cfcfcf url(gradient.png) repeat-y;
+      -webkit-box-shadow: 0 1px 5px #888;
+      text-shadow: 0 1px 1px #f5f5f5;
+    }
+      .optimus dl dt {
+        float: left; clear: both;
+      }
+      .optimus dl dd {
+        float: right;
+      }
+
+.front {
+  z-index: 10;
+}
+.container:hover .front {
+  z-index: 0;
+} 
+
+#credit {
+  position: absolute; bottom: 40px; right: 40px; width: 200px;
+  text-align: center; font-size: 14px; color: #717171;
+}
+  #credit a {
+    color: #666;
+  }
+    #credit a:hover {
+      color: #888;
+    }*/
