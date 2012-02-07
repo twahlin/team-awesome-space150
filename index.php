@@ -23,32 +23,19 @@
   <div class="button-example-css3">Hello</div>
   <p class="three-dee-text">Sup Baller</p>
 </section>
-<section>
-  
-  
-  
-  
-  
-  
-
-
-
-
-
-
+<section class="transformers">
 
   <h1>Transformers Top Trumps</h1>
-  <p id="browser"><em>Made with Webkit 3D Transforms - Supported by Safari browser only</em></p>
 
   <div id="transformers-rule">
   	<div class="container megatron">
   		<div class="card">
   			<div class="face front">
-  				<img src="megatron.png" alt="Megatron" />
+  				<img src="public/images/megatron.png" alt="Megatron" />
   			</div>
   			<div class="face back">
   				<h2>Megatron</h2>
-  				<img src="decepticons.png" alt="Decepticons logo" />
+  				<img src="public/images/decepticons.png" alt="Decepticons logo" />
   				<p>Megatron is the primary antagonist and leader of the evil Decepticons.</p>
 
   				<dl>
@@ -74,11 +61,11 @@
   	<div class="container optimus">
   		<div class="card">
   			<div class="face front">
-  				<img src="optimus.png" alt="Optimus Prime" />
+  				<img src="public/images/optimus.png" alt="Optimus Prime" />
   			</div>
   			<div class="face back">
   				<h2>Optimus Prime</h2>
-  				<img src="autobots.png" alt="Autobots logo" />
+  				<img src="public/images/autobots.png" alt="Autobots logo" />
   				<p>Optimus Prime is the main protagonist and leader of the Autobots.</p>
 
   				<dl>

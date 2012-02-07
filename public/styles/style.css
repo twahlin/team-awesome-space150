@@ -81,9 +81,9 @@ html {
 /* line 27, ../scss/style.scss */
 section {
   background: rgba(255, 255, 255, 0.5);
-  height: 2000px;
+  min-height: 900px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 200px auto 200px auto;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
@@ -188,139 +188,214 @@ h1, h2, h3, h4 {
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
-/*body {
-  background: #3f3f3f url(wood-bg.png);
-  font-family: Helvetica, Arial, Sans-Serif;
+/* line 108, ../scss/style.scss */
+.transformers {
+  background: rgba(0, 0, 0, 0.6);
 }
 
-h1 {
-  font-size: 50px; text-transform: uppercase; color: #717171;
-  text-shadow: 0 3px 3px #333; margin: 50px 0 0 0; text-align: center;
-}
+/* line 112, ../scss/style.scss */
 #browser {
-  margin: 0 auto; text-align: center;
+  margin: 0 auto;
+  text-align: center;
   text-shadow: 0 3px 3px #333;
 }
-  #browser em {
-    font: italic 26px Georgia, Serif; color: #666; 
-  }
 
-#transformers-rule {
-  width: 750px; position: relative; margin: 50px auto;
+/* line 116, ../scss/style.scss */
+#browser em {
+  font: italic 26px Georgia, Serif;
+  color: #666;
 }
 
+/* line 120, ../scss/style.scss */
+#transformers-rule {
+  width: 750px;
+  position: relative;
+  margin: 50px auto;
+}
+
+/* line 124, ../scss/style.scss */
+#transformers-rule h2 {
+  color: #333;
+  font-family: arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 136, ../scss/style.scss */
 .container {
-  width: 324px; height: 412px;
+  width: 324px;
+  height: 412px;
   -webkit-perspective: 1000;
 }
 
+/* line 141, ../scss/style.scss */
 .card {
-  width: 324px; height: 412px;
-  border: 8px solid #fff; 
+  width: 324px;
+  height: 412px;
+  border: 8px solid #fff;
   -webkit-transform-style: preserve-3d;
   -webkit-transition: 0.5s;
 }
-  .container:hover .card {
-    -webkit-transform: rotateY(180deg);       
-  }
 
+/* line 147, ../scss/style.scss */
+.container:hover .card {
+  -webkit-transform: rotateY(180deg);
+}
+
+/* line 151, ../scss/style.scss */
 .face {
   position: absolute;
   -webkit-backface-visibility: hidden;
 }
 
-
+/* line 157, ../scss/style.scss */
 .megatron {
-  float: left; position: absolute; top: 30px; left: 20px;
+  float: left;
+  position: absolute;
+  top: 30px;
+  left: 20px;
   -webkit-transform: rotate(5deg);
 }
-  .megatron .front {
-    
-  }
-  .megatron .back {
-    width: 284px; height: 372px; padding: 20px;
-    -webkit-transform: rotateY(180deg);
-    background: #a3a3a3 url(texture.png); 
-  }
-    .megatron .back h2 {
-      width: 287px; height: 42px; margin: 0 auto 20px auto;
-      background: url(megatron-title.png); text-indent: -9999px; 
-    }
-    .megatron img {
-      float: right;
-    }
-    .megatron p {
-      float: left; width: 185px; margin: 0 0 20px 0;
-      font-size: 17px; line-height: 28px; color: #4c4c4c; 
-    }
-    .megatron dl {
-      font-size: 30px; font-weight: bold; 
-      line-height: 40px; color: #717171;
-      width: 264px; padding: 5px 10px; overflow: hidden; 
-      background: #cfcfcf url(gradient.png) repeat-y;
-      -webkit-box-shadow: 0 1px 5px #888;
-      text-shadow: 0 1px 1px #f5f5f5;
-    }
-      .megatron dl dt {
-        float: left; clear: both;
-      }
-      .megatron dl dd {
-        float: right;
-      }
 
-  
+/* line 164, ../scss/style.scss */
+.megatron .back {
+  width: 284px;
+  height: 372px;
+  padding: 20px 20px 20px 20px;
+  -webkit-transform: rotateY(180deg);
+  background: #a3a3a3 url(texture.png);
+}
+
+/* line 169, ../scss/style.scss */
+.megatron img {
+  float: right;
+}
+
+/* line 172, ../scss/style.scss */
+.megatron p {
+  float: left;
+  width: 185px;
+  margin: 0 0 20px 0;
+  font-size: 17px;
+  line-height: 28px;
+  color: #4c4c4c;
+}
+
+/* line 176, ../scss/style.scss */
+.megatron dl {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #717171;
+  width: 264px;
+  padding: 5px 10px;
+  overflow: hidden;
+  background: #cfcfcf url(gradient.png) repeat-y;
+  -webkit-box-shadow: 0 1px 5px #888;
+  text-shadow: 0 1px 1px #f5f5f5;
+}
+
+/* line 184, ../scss/style.scss */
+.megatron dl dt {
+  float: left;
+  clear: both;
+}
+
+/* line 187, ../scss/style.scss */
+.megatron dl dd {
+  float: right;
+}
+
+/* line 192, ../scss/style.scss */
 .optimus {
-  float: left; position: absolute; top: 120px; right: 20px;
+  float: left;
+  position: absolute;
+  top: 120px;
+  right: 20px;
   -webkit-transform: rotate(-3deg);
 }
-  .optimus .front {
-    
-  }
-  .optimus .back {
-    width: 284px; height: 372px; padding: 20px;
-    -webkit-transform: rotateY(180deg);
-    background: #a3a3a3 url(texture.png); 
-  }
-    .optimus .back h2 {
-      width: 292px; height: 33px; margin: 0 auto 20px auto;
-      background: url(optimus-title.png); text-indent: -9999px; 
-    }
-    .optimus img {
-      float: right;
-    }
-    .optimus p {
-      float: left; width: 185px; margin: 0 0 27px 0;
-      font-size: 17px; line-height: 28px; color: #4c4c4c; 
-    }
-    .optimus dl {
-      font-size: 30px; font-weight: bold; 
-      line-height: 40px; color: #717171;
-      width: 264px; padding: 5px 10px; overflow: hidden; 
-      background: #cfcfcf url(gradient.png) repeat-y;
-      -webkit-box-shadow: 0 1px 5px #888;
-      text-shadow: 0 1px 1px #f5f5f5;
-    }
-      .optimus dl dt {
-        float: left; clear: both;
-      }
-      .optimus dl dd {
-        float: right;
-      }
 
+/* line 199, ../scss/style.scss */
+.optimus .back {
+  width: 284px;
+  height: 372px;
+  padding: 20px 20px 20px 20px;
+  -webkit-transform: rotateY(180deg);
+  background: #a3a3a3 url(texture.png);
+}
+
+/* line 204, ../scss/style.scss */
+.optimus img {
+  float: right;
+}
+
+/* line 207, ../scss/style.scss */
+.optimus p {
+  float: left;
+  width: 185px;
+  margin: 0 0 27px 0;
+  font-size: 17px;
+  line-height: 28px;
+  color: #4c4c4c;
+}
+
+/* line 211, ../scss/style.scss */
+.optimus dl {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #717171;
+  width: 264px;
+  padding: 5px 10px;
+  overflow: hidden;
+  background: #cfcfcf url(gradient.png) repeat-y;
+  -webkit-box-shadow: 0 1px 5px #888;
+  text-shadow: 0 1px 1px #f5f5f5;
+}
+
+/* line 219, ../scss/style.scss */
+.optimus dl dt {
+  float: left;
+  clear: both;
+}
+
+/* line 222, ../scss/style.scss */
+.optimus dl dd {
+  float: right;
+}
+
+/* line 226, ../scss/style.scss */
 .front {
   z-index: 10;
 }
+
+/* line 229, ../scss/style.scss */
 .container:hover .front {
   z-index: 0;
-} 
-
-#credit {
-  position: absolute; bottom: 40px; right: 40px; width: 200px;
-  text-align: center; font-size: 14px; color: #717171;
 }
-  #credit a {
-    color: #666;
-  }
-    #credit a:hover {
-      color: #888;
-    }*/
+
+/* line 233, ../scss/style.scss */
+#credit {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 200px;
+  text-align: center;
+  font-size: 14px;
+  color: #717171;
+}
+
+/* line 237, ../scss/style.scss */
+#credit a {
+  color: #666;
+}
+
+/* line 240, ../scss/style.scss */
+#credit a:hover {
+  color: #888;
+}

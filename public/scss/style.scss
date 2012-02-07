@@ -26,9 +26,9 @@ html {
 
 section {
   background: rgba(255, 255, 255, .5);
-  height: 2000px;
+  min-height: 900px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 200px auto 200px auto;
   
   @include border-radius(2px);
 }
@@ -105,16 +105,10 @@ h1, h2, h3, h4 {
 
 
 
-
-/*body {
-  background: #3f3f3f url(wood-bg.png);
-  font-family: Helvetica, Arial, Sans-Serif;
+.transformers {
+  background: rgba(0, 0, 0, .6);
 }
 
-h1 {
-  font-size: 50px; text-transform: uppercase; color: #717171;
-  text-shadow: 0 3px 3px #333; margin: 50px 0 0 0; text-align: center;
-}
 #browser {
   margin: 0 auto; text-align: center;
   text-shadow: 0 3px 3px #333;
@@ -125,6 +119,18 @@ h1 {
 
 #transformers-rule {
   width: 750px; position: relative; margin: 50px auto;
+}
+
+#transformers-rule h2 {
+  color: #333;
+  font-family: arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .container {
@@ -156,14 +162,10 @@ h1 {
     
   }
   .megatron .back {
-    width: 284px; height: 372px; padding: 20px;
+    width: 284px; height: 372px; padding: 20px 20px 20px 20px;
     -webkit-transform: rotateY(180deg);
     background: #a3a3a3 url(texture.png); 
   }
-    .megatron .back h2 {
-      width: 287px; height: 42px; margin: 0 auto 20px auto;
-      background: url(megatron-title.png); text-indent: -9999px; 
-    }
     .megatron img {
       float: right;
     }
@@ -195,14 +197,10 @@ h1 {
     
   }
   .optimus .back {
-    width: 284px; height: 372px; padding: 20px;
+    width: 284px; height: 372px; padding: 20px 20px 20px 20px;
     -webkit-transform: rotateY(180deg);
     background: #a3a3a3 url(texture.png); 
   }
-    .optimus .back h2 {
-      width: 292px; height: 33px; margin: 0 auto 20px auto;
-      background: url(optimus-title.png); text-indent: -9999px; 
-    }
     .optimus img {
       float: right;
     }
@@ -241,4 +239,4 @@ h1 {
   }
     #credit a:hover {
       color: #888;
-    }*/
+    }
