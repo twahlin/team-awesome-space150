@@ -16,16 +16,12 @@
 
 <body>
 
-&copy; <? echo date("Y");?> 
-
 <section>
   <h1>CSS for Designers</h1>
   <div class="button-example-css3">Hello</div>
   <p class="three-dee-text">Sup Baller</p>
 </section>
 <section class="transformers">
-
-  <h1>Transformers Top Trumps</h1>
 
   <div id="transformers-rule">
   	<div class="container megatron">
@@ -112,8 +108,12 @@
 <section>6</section>
 <section>7</section>
 <section>8</section>
-<section><div class="pixels_scrolled three-dee-text"></div></section>
+<section>8</section>
+<section>8</section>
+<section>8</section>
+<section></section>
 
+<div class="pixels_scrolled"></div>
 
 </body>
 </html>
