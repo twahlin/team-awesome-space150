@@ -238,12 +238,26 @@ body {
   background: url(../images/ruler.png) left top repeat-y;
 }
 
-section {
+/*section {
   background: rgba(231, 230, 228, .5);
   border-top: 2px solid rgba(231, 230, 228, .4);
   min-height: 900px;
   max-width: 1000px;
   margin: 200px auto 200px auto;
+  
+  @include box-shadow(rgba(44, 42, 41, .4) 0 0 8px);
+}*/
+
+section {
+  padding: 200px 0 200px 0;
+}
+
+.section_wrap {
+  background: rgba(231, 230, 228, .5);
+  border-top: 2px solid rgba(231, 230, 228, .4);
+  min-height: 900px;
+  width: 1000px;
+  margin: 0 auto;
   
   @include box-shadow(rgba(44, 42, 41, .4) 0 0 8px);
 }

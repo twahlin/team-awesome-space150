@@ -17,12 +17,14 @@
 <body>
 
 <section>
+  <div class="section_wrap">  
   <h1>CSS for Designers</h1>
   <div class="button-example-css3">Hello</div>
   <p class="three-dee-text">Sup Baller</p>
+  </div>
 </section>
 <section class="transformers">
-
+  <div class="section_wrap">  
   <div id="transformers-rule">
   	<div class="container megatron">
   		<div class="card">
@@ -84,34 +86,34 @@
   	 	</div>
   	</div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
+</div>  
 </section>
-<section>3</section>
-<section>4</section>
-<section>5</section>
-<section>6</section>
-<section>7</section>
-<section>8</section>
-<section>8</section>
-<section>8</section>
-<section>8</section>
-<section></section>
+
+<section>
+  <div class="section_wrap">
+  </div>
+</section>
+<section>
+  <div class="section_wrap">
+  </div>
+</section>
+<section>
+  <div class="section_wrap">
+  </div>
+</section>
+<section>
+  <div class="section_wrap">
+  </div>
+</section>
+<section>
+  <div class="section_wrap">
+  </div>
+</section>
+<section>
+  <div class="section_wrap">
+  </div>
+</section>
+
 
 <div class="pixels_scrolled"></div>
 
