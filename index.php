@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title></title>
+    <title>Team Awesome</title>
 
     <link rel="stylesheet" href="public/styles/style.css" type="text/css" />
     <link rel="Shortcut Icon" href="public/images/favicon.ico" type="image/x-icon" />
