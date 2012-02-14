@@ -24,7 +24,8 @@
   </div>
 </section>
 <section class="transformers">
-  <div class="section_wrap">  
+  <div class="section_wrap">
+  <h2>Transformers</h2>      
   <div id="transformers-rule">
   	<div class="container megatron">
   		<div class="card">
@@ -96,7 +97,18 @@
   </div>
 </section>
 <section>
-  <div class="section_wrap">
+  <div class="section_wrap rainbow">
+    <div id="flare-1"></div>
+  	<div id="flare-2"></div>
+  	<div id="flare-3"></div>
+  	<div id="flare-4"></div>
+  	<div id="flare-5"></div>
+  	<div id="flare-6"></div>
+  	<div id="flare-7"></div>
+  	<div id="flare-8"></div>
+  	<div id="flare-9"></div>
+  	<div id="flare-10"></div>
+    <h6>In the end, It's up to you!<h6>
   </div>
 </section>
 <section>

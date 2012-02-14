@@ -238,16 +238,6 @@ body {
   background: url(../images/ruler.png) left top repeat-y;
 }
 
-/*section {
-  background: rgba(231, 230, 228, .5);
-  border-top: 2px solid rgba(231, 230, 228, .4);
-  min-height: 900px;
-  max-width: 1000px;
-  margin: 200px auto 200px auto;
-  
-  @include box-shadow(rgba(44, 42, 41, .4) 0 0 8px);
-}*/
-
 section {
   padding: 100px 0 100px 0;
 }
@@ -255,7 +245,8 @@ section {
 .section_wrap {
   background: rgba(231, 230, 228, .5);
   border-top: 2px solid rgba(231, 230, 228, .4);
-  min-height: 900px;
+  overflow: hidden;
+  position: relative;
   width: 1000px;
   margin: 0 auto;
   
@@ -270,6 +261,12 @@ h1, h2, h3, h4 {
   line-height: 60px;
   text-transform: uppercase;
   text-align: center;  
+}
+
+h2 {
+  color: rgba(11, 134, 137, 1);
+  
+  @include text-shadow(rgba(231, 230, 228, 1) 0 1px 1px);
 }
 
 .button-example-css3 {
@@ -349,6 +346,7 @@ h1, h2, h3, h4 {
 //Transformers Section
 //------------------------------------------------------------------
 
+
 #browser {
   margin: 0 auto; text-align: center;
   text-shadow: 0 3px 3px #333;
@@ -358,6 +356,7 @@ h1, h2, h3, h4 {
   }
 
 #transformers-rule {
+  height: 600px;
   width: 750px; position: relative; margin: 50px auto;
 }
 
@@ -488,10 +487,10 @@ h1, h2, h3, h4 {
 
 
 
-@-webkit-keyframes bot {
+/*@-webkit-keyframes bot {
     from { background-position: 0 0; }
     to { background-position: -1440px 0; }
-}
+}*/
 
   
 .robot-all-up-in-this {
@@ -500,8 +499,143 @@ h1, h2, h3, h4 {
  height: 306px;
  width: 160px; 
  
- -webkit-animation: bot .8s steps(9, end) infinite;
+/* -webkit-animation: bot .8s steps(9, end) infinite;*/
 }
+
+//------------------------------------------------------------------
+//Rainbow
+//------------------------------------------------------------------
+
+.rainbow {
+  padding: 100px 0;
+  @include background(
+  linear-gradient(top left, #ff0000, #00a8ff, #09ac2f, #dcd908, #ff00ea, #ff0000, #00a8ff, #09ac2f, #dcd908, #ff00ea));
+  
+    h6 {
+      position: relative;
+      font-family: 'Comic Sans MS';
+      color: #fff;
+      font-size: 60px;
+      text-align: center;
+      z-index: 5000;
+      
+      
+      @include text-shadow(#000 5px 5px 5px);
+    }
+    #flare-1 {
+    	position: absolute;
+    	top: 10px;
+    	left: 10px;
+    	width: 120px;
+    	height: 120px;
+    	@include border-radius(100%);
+    	background: transparent -webkit-radial-gradient(50% 50%, rgba(255,255,255,0) 30%, rgba(255,255,255,0.5) 100%);
+    }
+
+    #flare-2 {
+    	position: absolute;
+    	top: 50px;
+    	left: 50px;
+    	width: 200px;
+    	height: 200px;
+    	@include border-radius(100%);
+    	background: transparent -webkit-radial-gradient(50% 50%, rgba(255,255,255,1) 10%, rgba(255,182,187,0.8) 30%,  rgba(255,182,187,0) 60%, rgba(255,255,255,0) 100%);
+    }
+
+    #flare-3 {
+    	position: absolute;
+    	top: 50px;
+    	left: 50px;
+    	width: 200px;
+    	height: 200px;
+    	@include border-radius(100%);
+    	background: transparent -webkit-radial-gradient(50% 50%, rgba(197,81,70,0) 60%, rgba(197,81,70,0.8) 64%, rgba(197,81,70,0) 68%);
+    }
+
+    #flare-4 {
+    	position: absolute;
+    	top: 300px;
+    	left: 300px;
+    	width: 120px;
+    	height: 120px;
+    	@include border-radius(100%);
+    	background: transparent -webkit-radial-gradient(50% 50%, rgba(110,157,220,0) 30%, rgba(110,157,220,0.5) 100%);
+    }
+
+    #flare-5 {
+    	position: absolute;
+    	top: 280px;
+    	left: 280px;
+    	width: 100px;
+    	height: 100px;
+    	@include border-radius(100%);
+    	background: transparent -webkit-radial-gradient(50% 50%, rgba(110,157,220,0) 30%, rgba(110,157,220,0.5) 100%);
+    }
+
+    #flare-6 {
+    	position: absolute;
+    	top: 430px;
+    	left: 430px;
+    	width: 80px;
+    	height: 80px;
+    	@include border-radius(100%);
+    	background: transparent -webkit-radial-gradient(50% 50%, rgba(255,255,255,0.1) 10%, rgba(255,255,255,0.5) 100%);
+    }
+
+    #flare-7 {
+    	position: absolute;
+    	top: -50px;
+    	left: -50px;
+    	width: 400px;
+    	height: 400px;
+    	@include border-radius(100%);
+    	opacity: 0.9;
+    	background: transparent -webkit-radial-gradient(50% 50%, rgba(255,255,255,1) 10%, rgba(255,182,187,0.8) 30%,  rgba(255,182,187,0) 60%, rgba(255,255,255,0) 100%);
+    }
+
+    #flare-8 {
+    	position: absolute;
+    	top: 500px;
+    	left: 500px;
+    	width: 20px;
+    	height: 20px;
+    	@include border-radius(100%);
+    	background: transparent -webkit-radial-gradient(50% 50%, rgba(255,255,255,1) 10%, rgba(255,255,255,0) 70%);
+    }
+
+    #flare-9 {
+    	position: absolute;
+    	top: 600px;
+    	left: 600px;
+    	width: 8px;
+    	height: 8px;
+    	@include border-radius(100%);
+    	background: transparent -webkit-radial-gradient(50% 50%, rgba(255,255,255,0.8) 10%, rgba(255,255,255,0) 70%);
+    }
+
+    #flare-10 {
+    	position: absolute;
+    	top: 300px;
+    	left: 300px;
+    	width: 10px;
+    	height: 10px;
+    	@include border-radius(100%);
+    	background: transparent -webkit-radial-gradient(50% 50%, rgba(255,255,255,0.8) 10%, rgba(255,255,255,0) 40%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
