@@ -772,3 +772,24 @@ h1, h2, h3, h4 {
 #credit a:hover {
   color: #888;
 }
+
+@-webkit-keyframes bot {
+  /* line 492, ../scss/style.scss */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 493, ../scss/style.scss */
+  to {
+    background-position: -1440px 0;
+  }
+}
+
+/* line 497, ../scss/style.scss */
+.robot-all-up-in-this {
+  background: red url(../images/robot-sprite.png) no-repeat;
+  background-position: 0 0;
+  height: 306px;
+  width: 160px;
+  -webkit-animation: bot 0.8s steps(9, end) infinite;
+}
