@@ -45,12 +45,12 @@ $(document).ready(function() {
   		$('.pixels_scrolled').html(pixels_scrolled); 
 
 
-  		$("#waves_1").css("background-position", pixels_scrolled * 1);
-  		$("#waves_2").css("background-position", pixels_scrolled * 8);
-  		$("#waves_3").css("background-position", pixels_scrolled * 10);
-  		$("#waves_4").css("background-position", pixels_scrolled * 6);
-  		$("#waves_5").css("background-position", pixels_scrolled * 4);
-  		$("#waves_6").css("background-position", pixels_scrolled * 12);						
+  		$("#waves_1").css("background-position", pixels_scrolled * .1);
+  		$("#waves_2").css("background-position", -pixels_scrolled * .8);
+  		$("#waves_3").css("background-position", pixels_scrolled * .3);
+  		$("#waves_4").css("background-position", -pixels_scrolled * .6);
+  		$("#waves_5").css("background-position", pixels_scrolled * .4);
+  		$("#waves_6").css("background-position", -pixels_scrolled * .9);						
 
 
 

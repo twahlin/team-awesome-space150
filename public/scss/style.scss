@@ -246,8 +246,9 @@ section {
   background: rgba(231, 230, 228, .5);
   border-top: 2px solid rgba(231, 230, 228, .4);
   overflow: hidden;
+  padding: 40px;
   position: relative;
-  width: 1000px;
+  width: 920px;
   margin: 0 auto;
   
   @include box-shadow(rgba(44, 42, 41, .4) 0 0 8px);
@@ -265,8 +266,39 @@ h1, h2, h3, h4 {
 
 h2 {
   color: rgba(11, 134, 137, 1);
+  text-align: left;
+  padding: 0;
+  margin: 0;
   
   @include text-shadow(rgba(231, 230, 228, 1) 0 1px 1px);
+}
+
+h1 {
+  color: rgba(11, 134, 137, 1);
+  font-size: 120px;
+  
+  @include text-shadow(rgba(231, 230, 228, 1) 0 1px 1px);  
+}
+
+p {
+  color: #2c2a29;
+  font-size: 15px;
+  margin: 40px 0;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 18px;
+}
+
+.explainer {
+  color: #2c2a29;
+  margin: 0;
+  width: 450px;
+}
+
+.title-content {
+  padding: 40px 0 40px 0;
 }
 
 .button-example-css3 {
@@ -294,18 +326,13 @@ h2 {
   @include background(linear-gradient(rgba(163,214,255, 1), rgba(139,191,230, 1)));
 }
 
+.two-dee-text,
 .three-dee-text {
   color: #fff;
-  cursor: pointer;
   font-size: 80px;
   line-height: 80px;
-  text-align: center; 
+  text-align: left; 
   font-weight: 600;
-   
-  @include transition-default; 
-}
-
-.three-dee-text:hover {
   text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -318,7 +345,14 @@ h2 {
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+   
+  @include transition-default; 
 }
+
+.two-dee-text {
+  text-shadow: none;
+}
+
 
 
 
@@ -624,14 +658,181 @@ h2 {
     }
 }
 
+//------------------------------------------------------------------
+//Waves
+//------------------------------------------------------------------
+
+.wave-module .section_wrap {
+ height: 250px; 
+}
+
+.wave_set {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+}
+
+.waves {
+  background-image: url(../images/waves.png);
+  height: 99px;
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.waves_1 {
+  
+}
+
+.waves_2 {
+  margin-top: 10px;
+}
+
+.waves_3 {
+  margin-top: 20px;
+}
+
+.waves_4 {
+  margin-top: 25px;
+}
+
+.waves_5 {
+  margin-top: 30px;
+}
+
+.waves_6 {
+  margin-top: 40px;
+}
 
 
 
+//------------------------------------------------------------------
+//OJ
+//------------------------------------------------------------------
 
+@-webkit-keyframes pulse-1 {
+  from { opacity: 0.55; }
+  50% { opacity: 1.0; }
+  to { opacity: 0.55; }
+}
 
+.oj .section_wrap {
+  height: 500px;
+  background-color: #fbf9f1;
+  background-image: url(../images/oj-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
 
+.oj-star-1 {
+  background: url(../images/oj-star-1.png) no-repeat;
+  position: absolute;
+  top: 173px;
+  left: 150px;
+  height: 27px;
+  width: 30px;
 
+   -webkit-animation-name: pulse-1; 
+   -webkit-animation-duration: 2s; 
+   -webkit-animation-iteration-count: infinite;
+}
 
+.oj-star-2 {
+  background: url(../images/oj-star-2.png) no-repeat;
+  position: absolute;
+  top: 98px;
+  left: 176px;
+  height: 28px;
+  width: 35px;
+  
+  -webkit-animation-name: pulse-1; 
+  -webkit-animation-duration: 3s; 
+  -webkit-animation-iteration-count: infinite;
+}
+
+.oj-star-3 {
+  background: url(../images/oj-star-3.png) no-repeat;
+  position: absolute;
+  top: 73px;
+  left: 194px;
+  height: 21px;
+  width: 18px;
+  
+  -webkit-animation-name: pulse-1; 
+  -webkit-animation-duration: 2.5s; 
+  -webkit-animation-iteration-count: infinite;
+}
+
+.oj-star-4 {
+  background: url(../images/oj-star-4.png) no-repeat;
+  position: absolute;
+  top: 92px;
+  left: 218px;
+  height: 18px;
+  width: 16px;
+  
+  -webkit-animation-name: pulse-1; 
+  -webkit-animation-duration: 2s; 
+  -webkit-animation-iteration-count: infinite;
+}
+
+.oj-star-5 {
+  background: url(../images/oj-star-5.png) no-repeat;
+  position: absolute;
+  top: 84px;
+  left: 236px;
+  height: 12px;
+  width: 10px;
+  
+  -webkit-animation-name: pulse-1; 
+  -webkit-animation-duration: 1.5s; 
+  -webkit-animation-iteration-count: infinite;
+}
+
+.oj-star-6 {
+  background: url(../images/oj-star-6.png) no-repeat;
+  position: absolute;
+  top: 91px;
+  left: 260px;
+  height: 17px;
+  width: 15px;
+  
+  -webkit-animation-name: pulse-1; 
+  -webkit-animation-duration: 2.3s; 
+  -webkit-animation-iteration-count: infinite;
+}
+
+.oj-star-7 {
+  background: url(../images/oj-star-7.png) no-repeat;
+  position: absolute;
+  top: 115px;
+  left: 346px;
+  height: 20px;
+  width: 21px;
+  
+  -webkit-animation-name: pulse-1; 
+  -webkit-animation-duration: 1.8s; 
+  -webkit-animation-iteration-count: infinite;
+}
+
+.oj-star-8 {
+  background: url(../images/oj-star-8.png) no-repeat;
+  position: absolute;
+  top: 153px;
+  left: 384px;
+  height: 17px;
+  width: 16px;
+  
+  -webkit-animation-name: pulse-1; 
+  -webkit-animation-duration: 2.8s; 
+  -webkit-animation-iteration-count: infinite;
+}
 
 
 
