@@ -835,6 +835,52 @@ p {
 }
 
 
+//------------------------------------------------------------------
+//amex
+//------------------------------------------------------------------
+.amex .section_wrap {
+  height: 394px;
+  background-image: url(../images/amex-blue-sky.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@-webkit-keyframes shine {
+  from { opacity: 0.55; }
+  50% { opacity: 1.0; }
+  to { opacity: 0.55; }
+}
+
+.amex .shine_contain {
+  background: aqua;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  height: 135px;
+  width: 214px;
+}
+
+.amex .shine {
+  -webkit-animation-name: shinw; 
+  -webkit-animation-duration: 2.8s; 
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
