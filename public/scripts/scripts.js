@@ -1,4 +1,11 @@
 $(document).ready(function() {
+  
+  
+  
+  $(".background-1").click(function() { $('#bg-changer').css("background-color", "rgba(231, 230, 228, .5)") });
+  $(".background-2").click(function() { $('#bg-changer').css("background-color", "rgba(207, 181, 129, .5)") });
+  $(".background-3").click(function() { $('#bg-changer').css("background-color", "rgba(252, 137, 137, .5)") });
+  $(".background-4").click(function() { $('#bg-changer').css("background-color", "rgba(152, 167, 210, .5)") });      
 
   $(function() {
     var SCROLL_DURATION = 500;

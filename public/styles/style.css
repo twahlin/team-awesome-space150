@@ -477,31 +477,44 @@ p {
   margin: 40px 0;
 }
 
-/* line 289, ../scss/style.scss */
+/* line 290, ../scss/style.scss */
+a,
+a:visited {
+  color: #0c6b6d;
+}
+
+/* line 294, ../scss/style.scss */
+a:hover {
+  color: #179a9d;
+}
+
+/* line 298, ../scss/style.scss */
 .sub-title {
   text-align: center;
   font-size: 18px;
 }
 
-/* line 294, ../scss/style.scss */
+/* line 303, ../scss/style.scss */
 .explainer {
   color: #2c2a29;
   margin: 0;
   width: 450px;
 }
 
-/* line 300, ../scss/style.scss */
+/* line 309, ../scss/style.scss */
 .title-content {
   padding: 40px 0 40px 0;
 }
 
-/* line 304, ../scss/style.scss */
+/* line 313, ../scss/style.scss */
 .button-example-css3 {
+  text-align: center;
   border: 1px solid #6f9dc0;
   background: #6caddf;
   color: #fff;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
+  margin-bottom: 30px;
   padding: 7px 12px 6px 12px;
   line-height: 34px;
   text-decoration: none;
@@ -534,9 +547,10 @@ p {
   -webkit-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
+  width: 200px;
 }
 
-/* line 321, ../scss/style.scss */
+/* line 333, ../scss/style.scss */
 .button-example-css3:hover {
   background: #8acbfc;
   color: #fff;
@@ -553,7 +567,24 @@ p {
   background: linear-gradient(#a3d6ff, #8bbfe6);
 }
 
-/* line 330, ../scss/style.scss */
+/* line 341, ../scss/style.scss */
+.button-example-css3:active {
+  background: #8acbfc;
+  color: #fff;
+  text-decoration: none;
+  -moz-box-shadow: rgba(0, 0, 0, 0.45) 0 0 8px, inset #dcf3ff 0 1px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0 0 8px, inset #dcf3ff 0 1px 0;
+  -o-box-shadow: rgba(0, 0, 0, 0.45) 0 0 8px, inset #dcf3ff 0 1px 0;
+  box-shadow: rgba(0, 0, 0, 0.45) 0 0 8px, inset #dcf3ff 0 1px 0;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8bbfe6), color-stop(100%, #a3d6ff));
+  background: -webkit-linear-gradient(#8bbfe6, #a3d6ff);
+  background: -moz-linear-gradient(#8bbfe6, #a3d6ff);
+  background: -o-linear-gradient(#8bbfe6, #a3d6ff);
+  background: -ms-linear-gradient(#8bbfe6, #a3d6ff);
+  background: linear-gradient(#8bbfe6, #a3d6ff);
+}
+
+/* line 350, ../scss/style.scss */
 .two-dee-text,
 .three-dee-text {
   color: #fff;
@@ -576,12 +607,12 @@ p {
   transition-timing-function: ease-in;
 }
 
-/* line 352, ../scss/style.scss */
+/* line 372, ../scss/style.scss */
 .two-dee-text {
   text-shadow: none;
 }
 
-/* line 359, ../scss/style.scss */
+/* line 379, ../scss/style.scss */
 .pixels_scrolled {
   background: url(../images/master-sprite.png);
   color: #2c2a29;
@@ -597,20 +628,20 @@ p {
   width: 58px;
 }
 
-/* line 384, ../scss/style.scss */
+/* line 399, ../scss/style.scss */
 #browser {
   margin: 0 auto;
   text-align: center;
   text-shadow: 0 3px 3px #333;
 }
 
-/* line 388, ../scss/style.scss */
+/* line 403, ../scss/style.scss */
 #browser em {
   font: italic 26px Georgia, Serif;
   color: #666;
 }
 
-/* line 392, ../scss/style.scss */
+/* line 407, ../scss/style.scss */
 #transformers-rule {
   height: 600px;
   width: 750px;
@@ -618,7 +649,7 @@ p {
   margin: 50px auto;
 }
 
-/* line 397, ../scss/style.scss */
+/* line 412, ../scss/style.scss */
 #transformers-rule h2 {
   color: #333;
   font-family: arial;
@@ -631,14 +662,14 @@ p {
   text-align: center;
 }
 
-/* line 409, ../scss/style.scss */
+/* line 424, ../scss/style.scss */
 .container {
   width: 324px;
   height: 412px;
   -webkit-perspective: 1000;
 }
 
-/* line 414, ../scss/style.scss */
+/* line 429, ../scss/style.scss */
 .card {
   width: 324px;
   height: 412px;
@@ -651,18 +682,18 @@ p {
   box-shadow: rgba(44, 42, 41, 0.4) 0 0 8px;
 }
 
-/* line 421, ../scss/style.scss */
+/* line 436, ../scss/style.scss */
 .container:hover .card {
   -webkit-transform: rotateY(180deg);
 }
 
-/* line 425, ../scss/style.scss */
+/* line 440, ../scss/style.scss */
 .face {
   position: absolute;
   -webkit-backface-visibility: hidden;
 }
 
-/* line 431, ../scss/style.scss */
+/* line 446, ../scss/style.scss */
 .megatron {
   float: left;
   position: absolute;
@@ -671,7 +702,7 @@ p {
   -webkit-transform: rotate(5deg);
 }
 
-/* line 438, ../scss/style.scss */
+/* line 453, ../scss/style.scss */
 .megatron .back {
   width: 284px;
   height: 372px;
@@ -680,12 +711,12 @@ p {
   background: #a3a3a3 url(texture.png);
 }
 
-/* line 443, ../scss/style.scss */
+/* line 458, ../scss/style.scss */
 .megatron img {
   float: right;
 }
 
-/* line 446, ../scss/style.scss */
+/* line 461, ../scss/style.scss */
 .megatron p {
   float: left;
   width: 185px;
@@ -695,7 +726,7 @@ p {
   color: #4c4c4c;
 }
 
-/* line 450, ../scss/style.scss */
+/* line 465, ../scss/style.scss */
 .megatron dl {
   font-size: 30px;
   font-weight: bold;
@@ -709,18 +740,18 @@ p {
   text-shadow: 0 1px 1px #f5f5f5;
 }
 
-/* line 458, ../scss/style.scss */
+/* line 473, ../scss/style.scss */
 .megatron dl dt {
   float: left;
   clear: both;
 }
 
-/* line 461, ../scss/style.scss */
+/* line 476, ../scss/style.scss */
 .megatron dl dd {
   float: right;
 }
 
-/* line 466, ../scss/style.scss */
+/* line 481, ../scss/style.scss */
 .optimus {
   float: left;
   position: absolute;
@@ -729,7 +760,7 @@ p {
   -webkit-transform: rotate(-3deg);
 }
 
-/* line 473, ../scss/style.scss */
+/* line 488, ../scss/style.scss */
 .optimus .back {
   width: 284px;
   height: 372px;
@@ -738,12 +769,12 @@ p {
   background: #a3a3a3 url(texture.png);
 }
 
-/* line 478, ../scss/style.scss */
+/* line 493, ../scss/style.scss */
 .optimus img {
   float: right;
 }
 
-/* line 481, ../scss/style.scss */
+/* line 496, ../scss/style.scss */
 .optimus p {
   float: left;
   width: 185px;
@@ -753,7 +784,7 @@ p {
   color: #4c4c4c;
 }
 
-/* line 485, ../scss/style.scss */
+/* line 500, ../scss/style.scss */
 .optimus dl {
   font-size: 30px;
   font-weight: bold;
@@ -767,28 +798,28 @@ p {
   text-shadow: 0 1px 1px #f5f5f5;
 }
 
-/* line 493, ../scss/style.scss */
+/* line 508, ../scss/style.scss */
 .optimus dl dt {
   float: left;
   clear: both;
 }
 
-/* line 496, ../scss/style.scss */
+/* line 511, ../scss/style.scss */
 .optimus dl dd {
   float: right;
 }
 
-/* line 500, ../scss/style.scss */
+/* line 515, ../scss/style.scss */
 .front {
   z-index: 10;
 }
 
-/* line 503, ../scss/style.scss */
+/* line 518, ../scss/style.scss */
 .container:hover .front {
   z-index: 0;
 }
 
-/* line 507, ../scss/style.scss */
+/* line 522, ../scss/style.scss */
 #credit {
   position: absolute;
   bottom: 40px;
@@ -799,12 +830,12 @@ p {
   color: #717171;
 }
 
-/* line 511, ../scss/style.scss */
+/* line 526, ../scss/style.scss */
 #credit a {
   color: #666;
 }
 
-/* line 514, ../scss/style.scss */
+/* line 529, ../scss/style.scss */
 #credit a:hover {
   color: #888;
 }
@@ -813,7 +844,7 @@ p {
     from { background-position: 0 0; }
     to { background-position: -1440px 0; }
 }*/
-/* line 530, ../scss/style.scss */
+/* line 545, ../scss/style.scss */
 .robot-all-up-in-this {
   background: red url(../images/robot-sprite.png) no-repeat;
   background-position: 0 0;
@@ -822,7 +853,7 @@ p {
   /* -webkit-animation: bot .8s steps(9, end) infinite;*/
 }
 
-/* line 543, ../scss/style.scss */
+/* line 558, ../scss/style.scss */
 .rainbow {
   padding: 100px 0;
   background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #ff0000), color-stop(11.111%, #00a8ff), color-stop(22.222%, #09ac2f), color-stop(33.333%, #dcd908), color-stop(44.444%, #ff00ea), color-stop(55.556%, #ff0000), color-stop(66.667%, #00a8ff), color-stop(77.778%, #09ac2f), color-stop(88.889%, #dcd908), color-stop(100%, #ff00ea));
@@ -832,7 +863,7 @@ p {
   background: -ms-linear-gradient(top left, #ff0000, #00a8ff, #09ac2f, #dcd908, #ff00ea, #ff0000, #00a8ff, #09ac2f, #dcd908, #ff00ea);
   background: linear-gradient(top left, #ff0000, #00a8ff, #09ac2f, #dcd908, #ff00ea, #ff0000, #00a8ff, #09ac2f, #dcd908, #ff00ea);
 }
-/* line 548, ../scss/style.scss */
+/* line 563, ../scss/style.scss */
 .rainbow h6 {
   position: relative;
   font-family: 'Comic Sans MS';
@@ -842,7 +873,7 @@ p {
   z-index: 5000;
   text-shadow: black 5px 5px 5px;
 }
-/* line 559, ../scss/style.scss */
+/* line 574, ../scss/style.scss */
 .rainbow #flare-1 {
   position: absolute;
   top: 10px;
@@ -857,7 +888,7 @@ p {
   border-radius: 100%;
   background: transparent -webkit-radial-gradient(50% 50%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.5) 100%);
 }
-/* line 569, ../scss/style.scss */
+/* line 584, ../scss/style.scss */
 .rainbow #flare-2 {
   position: absolute;
   top: 50px;
@@ -872,7 +903,7 @@ p {
   border-radius: 100%;
   background: transparent -webkit-radial-gradient(50% 50%, white 10%, rgba(255, 182, 187, 0.8) 30%, rgba(255, 182, 187, 0) 60%, rgba(255, 255, 255, 0) 100%);
 }
-/* line 579, ../scss/style.scss */
+/* line 594, ../scss/style.scss */
 .rainbow #flare-3 {
   position: absolute;
   top: 50px;
@@ -887,7 +918,7 @@ p {
   border-radius: 100%;
   background: transparent -webkit-radial-gradient(50% 50%, rgba(197, 81, 70, 0) 60%, rgba(197, 81, 70, 0.8) 64%, rgba(197, 81, 70, 0) 68%);
 }
-/* line 589, ../scss/style.scss */
+/* line 604, ../scss/style.scss */
 .rainbow #flare-4 {
   position: absolute;
   top: 300px;
@@ -902,7 +933,7 @@ p {
   border-radius: 100%;
   background: transparent -webkit-radial-gradient(50% 50%, rgba(110, 157, 220, 0) 30%, rgba(110, 157, 220, 0.5) 100%);
 }
-/* line 599, ../scss/style.scss */
+/* line 614, ../scss/style.scss */
 .rainbow #flare-5 {
   position: absolute;
   top: 280px;
@@ -917,7 +948,7 @@ p {
   border-radius: 100%;
   background: transparent -webkit-radial-gradient(50% 50%, rgba(110, 157, 220, 0) 30%, rgba(110, 157, 220, 0.5) 100%);
 }
-/* line 609, ../scss/style.scss */
+/* line 624, ../scss/style.scss */
 .rainbow #flare-6 {
   position: absolute;
   top: 430px;
@@ -932,7 +963,7 @@ p {
   border-radius: 100%;
   background: transparent -webkit-radial-gradient(50% 50%, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.5) 100%);
 }
-/* line 619, ../scss/style.scss */
+/* line 634, ../scss/style.scss */
 .rainbow #flare-7 {
   position: absolute;
   top: -50px;
@@ -948,7 +979,7 @@ p {
   opacity: 0.9;
   background: transparent -webkit-radial-gradient(50% 50%, white 10%, rgba(255, 182, 187, 0.8) 30%, rgba(255, 182, 187, 0) 60%, rgba(255, 255, 255, 0) 100%);
 }
-/* line 630, ../scss/style.scss */
+/* line 645, ../scss/style.scss */
 .rainbow #flare-8 {
   position: absolute;
   top: 500px;
@@ -963,7 +994,7 @@ p {
   border-radius: 100%;
   background: transparent -webkit-radial-gradient(50% 50%, white 10%, rgba(255, 255, 255, 0) 70%);
 }
-/* line 640, ../scss/style.scss */
+/* line 655, ../scss/style.scss */
 .rainbow #flare-9 {
   position: absolute;
   top: 600px;
@@ -978,7 +1009,7 @@ p {
   border-radius: 100%;
   background: transparent -webkit-radial-gradient(50% 50%, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 70%);
 }
-/* line 650, ../scss/style.scss */
+/* line 665, ../scss/style.scss */
 .rainbow #flare-10 {
   position: absolute;
   top: 300px;
@@ -994,12 +1025,12 @@ p {
   background: transparent -webkit-radial-gradient(50% 50%, rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0) 40%);
 }
 
-/* line 665, ../scss/style.scss */
+/* line 680, ../scss/style.scss */
 .wave-module .section_wrap {
   height: 250px;
 }
 
-/* line 669, ../scss/style.scss */
+/* line 684, ../scss/style.scss */
 .wave_set {
   position: absolute;
   bottom: 100px;
@@ -1007,7 +1038,7 @@ p {
   right: 0;
 }
 
-/* line 676, ../scss/style.scss */
+/* line 691, ../scss/style.scss */
 .waves {
   background-image: url(../images/waves.png);
   height: 99px;
@@ -1020,49 +1051,49 @@ p {
   width: 100%;
 }
 
-/* line 692, ../scss/style.scss */
+/* line 707, ../scss/style.scss */
 .waves_2 {
   margin-top: 10px;
 }
 
-/* line 696, ../scss/style.scss */
+/* line 711, ../scss/style.scss */
 .waves_3 {
   margin-top: 20px;
 }
 
-/* line 700, ../scss/style.scss */
+/* line 715, ../scss/style.scss */
 .waves_4 {
   margin-top: 25px;
 }
 
-/* line 704, ../scss/style.scss */
+/* line 719, ../scss/style.scss */
 .waves_5 {
   margin-top: 30px;
 }
 
-/* line 708, ../scss/style.scss */
+/* line 723, ../scss/style.scss */
 .waves_6 {
   margin-top: 40px;
 }
 
 @-webkit-keyframes pulse-1 {
-  /* line 719, ../scss/style.scss */
+  /* line 734, ../scss/style.scss */
   from {
-    opacity: 0.55;
+    opacity: 0.5;
   }
 
-  /* line 720, ../scss/style.scss */
+  /* line 735, ../scss/style.scss */
   50% {
     opacity: 1.0;
   }
 
-  /* line 721, ../scss/style.scss */
+  /* line 736, ../scss/style.scss */
   to {
-    opacity: 0.55;
+    opacity: 0.5;
   }
 }
 
-/* line 724, ../scss/style.scss */
+/* line 739, ../scss/style.scss */
 .oj .section_wrap {
   height: 500px;
   background-color: #fbf9f1;
@@ -1071,7 +1102,7 @@ p {
   background-position: center;
 }
 
-/* line 733, ../scss/style.scss */
+/* line 748, ../scss/style.scss */
 .oj-star-1 {
   background: url(../images/oj-star-1.png) no-repeat;
   position: absolute;
@@ -1084,7 +1115,7 @@ p {
   -webkit-animation-iteration-count: infinite;
 }
 
-/* line 746, ../scss/style.scss */
+/* line 761, ../scss/style.scss */
 .oj-star-2 {
   background: url(../images/oj-star-2.png) no-repeat;
   position: absolute;
@@ -1097,7 +1128,7 @@ p {
   -webkit-animation-iteration-count: infinite;
 }
 
-/* line 759, ../scss/style.scss */
+/* line 774, ../scss/style.scss */
 .oj-star-3 {
   background: url(../images/oj-star-3.png) no-repeat;
   position: absolute;
@@ -1110,7 +1141,7 @@ p {
   -webkit-animation-iteration-count: infinite;
 }
 
-/* line 772, ../scss/style.scss */
+/* line 787, ../scss/style.scss */
 .oj-star-4 {
   background: url(../images/oj-star-4.png) no-repeat;
   position: absolute;
@@ -1123,7 +1154,7 @@ p {
   -webkit-animation-iteration-count: infinite;
 }
 
-/* line 785, ../scss/style.scss */
+/* line 800, ../scss/style.scss */
 .oj-star-5 {
   background: url(../images/oj-star-5.png) no-repeat;
   position: absolute;
@@ -1136,7 +1167,7 @@ p {
   -webkit-animation-iteration-count: infinite;
 }
 
-/* line 798, ../scss/style.scss */
+/* line 813, ../scss/style.scss */
 .oj-star-6 {
   background: url(../images/oj-star-6.png) no-repeat;
   position: absolute;
@@ -1149,7 +1180,7 @@ p {
   -webkit-animation-iteration-count: infinite;
 }
 
-/* line 811, ../scss/style.scss */
+/* line 826, ../scss/style.scss */
 .oj-star-7 {
   background: url(../images/oj-star-7.png) no-repeat;
   position: absolute;
@@ -1162,7 +1193,7 @@ p {
   -webkit-animation-iteration-count: infinite;
 }
 
-/* line 824, ../scss/style.scss */
+/* line 839, ../scss/style.scss */
 .oj-star-8 {
   background: url(../images/oj-star-8.png) no-repeat;
   position: absolute;
@@ -1175,7 +1206,7 @@ p {
   -webkit-animation-iteration-count: infinite;
 }
 
-/* line 841, ../scss/style.scss */
+/* line 856, ../scss/style.scss */
 .amex .section_wrap {
   height: 394px;
   background-image: url(../images/amex-blue-sky.jpg);
@@ -1184,23 +1215,23 @@ p {
 }
 
 @-webkit-keyframes shine {
-  /* line 849, ../scss/style.scss */
+  /* line 864, ../scss/style.scss */
   from {
     opacity: 0.55;
   }
 
-  /* line 850, ../scss/style.scss */
+  /* line 865, ../scss/style.scss */
   50% {
     opacity: 1.0;
   }
 
-  /* line 851, ../scss/style.scss */
+  /* line 866, ../scss/style.scss */
   to {
     opacity: 0.55;
   }
 }
 
-/* line 854, ../scss/style.scss */
+/* line 869, ../scss/style.scss */
 .amex .shine_contain {
   background: aqua;
   position: absolute;
@@ -1210,9 +1241,15 @@ p {
   width: 214px;
 }
 
-/* line 863, ../scss/style.scss */
+/* line 878, ../scss/style.scss */
 .amex .shine {
   -webkit-animation-name: shinw;
   -webkit-animation-duration: 2.8s;
   -webkit-animation-iteration-count: infinite;
+}
+
+/* line 894, ../scss/style.scss */
+#bg-changer span {
+  text-decoration: underline;
+  cursor: pointer;
 }

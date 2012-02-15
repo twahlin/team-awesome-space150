@@ -286,6 +286,15 @@ p {
   margin: 40px 0;
 }
 
+a,
+a:visited {
+  color: #0c6b6d;
+}
+
+a:hover {
+  color: #179a9d;
+}
+
 .sub-title {
   text-align: center;
   font-size: 18px;
@@ -302,11 +311,13 @@ p {
 }
 
 .button-example-css3 {
+  text-align: center;
   border: 1px solid #6f9dc0;
   background: #6caddf;
   color: #fff;
   cursor: pointer;  
-  font-size: 14px;
+  font-size: 18px;
+  margin-bottom: 30px;
   padding: 7px 12px 6px 12px;
   line-height: 34px;
   text-decoration: none;
@@ -316,6 +327,7 @@ p {
   @include background(linear-gradient(rgba(153,204,245, 1), rgba(129,181,220, 1))); 
   @include text-shadow(#4c88b6 0 -1px 1px);
   @include transition-default;
+  width: 200px;
 }
 
 .button-example-css3:hover {
@@ -324,6 +336,14 @@ p {
   text-decoration: none;
   @include box-shadow(rgba(0, 0, 0, .35) 0 0 8px, inset rgba(220, 243, 255, 1) 0 1px 0);
   @include background(linear-gradient(rgba(163,214,255, 1), rgba(139,191,230, 1)));
+}
+
+.button-example-css3:active {
+  background: #8acbfc;
+  color: #fff;
+  text-decoration: none;
+  @include box-shadow(rgba(0, 0, 0, .45) 0 0 8px, inset rgba(220, 243, 255, 1) 0 1px 0);
+  @include background(linear-gradient(rgba(139,191,230, 1), rgba(163,214,255, 1)));
 }
 
 .two-dee-text,
@@ -370,11 +390,6 @@ p {
   text-shadow: 0 -1px rgba(220, 243, 255, 1);
   width: 58px;
 }
-
-
-
-
-
 
 //------------------------------------------------------------------
 //Transformers Section
@@ -716,9 +731,9 @@ p {
 //------------------------------------------------------------------
 
 @-webkit-keyframes pulse-1 {
-  from { opacity: 0.55; }
+  from { opacity: 0.5; }
   50% { opacity: 1.0; }
-  to { opacity: 0.55; }
+  to { opacity: 0.5; }
 }
 
 .oj .section_wrap {
@@ -872,8 +887,14 @@ p {
 
 
 
+//------------------------------------------------------------------
+//amex
+//------------------------------------------------------------------
 
-
+#bg-changer span {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 
 
