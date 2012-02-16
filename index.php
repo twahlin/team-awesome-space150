@@ -18,32 +18,10 @@
 
 <section>
   <div class="section_wrap">  
-    <h1>CSS &amp; JS for Designers</h1>
+    <h1>CSS &amp; JS for Creatives</h1>
     <p class="sub-title">Tom "The Whale" Wahlin</p>
   </div>
 </section>
-
-<section class="buttons">
-  <div class="section_wrap">
-    <div class="title-content">
-      <h2>Buttons and Button states</h2> 
-      <p class="explainer">There are 3 design states to a button. Normal, hover, and active.</p>      
-    </div>
-    <div class="button-example-css3">Hello</div>
-    <a href="http://tympanus.net/Tutorials/CSSButtonsPseudoElements/index3.html" target="_blank">Another example of css styled buttons</a>
-  </div>
-</section>
-
-<section class="transformers">
-  <div class="section_wrap">
-    <div class="title-content">
-      <h2>text effects</h2> 
-      <p class="explainer">With CSS, an (almost) unlimited amount of drop shadows can be used on an element. Stay away from inner shadows on text if possible.</p>      
-    </div>
-    <p class="two-dee-text">Two Dee Text</p>
-    <p class="three-dee-text">Three Dee with CSS!</p>
-  </div>
-</section> 
 
 <section class="transformers">
   <div class="section_wrap">
@@ -115,6 +93,27 @@
 </div>  
 </section>
 
+<section class="buttons">
+  <div class="section_wrap">
+    <div class="title-content">
+      <h2>Buttons and Button states</h2> 
+      <p class="explainer">There are 3 design states to a button. Normal, hover, and active.</p>      
+    </div>
+    <div class="button-example-css3">Hello</div>
+    <a href="http://tympanus.net/Tutorials/CSSButtonsPseudoElements/index3.html" target="_blank">Another example of css styled buttons</a>
+  </div>
+</section>
+
+<section class="transformers">
+  <div class="section_wrap">
+    <div class="title-content">
+      <h2>text effects</h2> 
+      <p class="explainer">With CSS, an (almost) unlimited amount of drop shadows can be used on an element. Stay away from inner shadows on text if possible.</p>      
+    </div>
+    <p class="two-dee-text">Two Dee Text</p>
+    <p class="three-dee-text">Three Dee with CSS!</p>
+  </div>
+</section> 
 
 <section class="wave-module">
   <div class="section_wrap">
@@ -131,7 +130,17 @@
       <div id="waves_6" class="waves waves_6"></div>    
     </div>
   </div>
-</section>  
+</section> 
+
+<section>
+  <div id="bg-changer" class="section_wrap">
+    <div class="title-content">
+      <h2>Reactions</h2> 
+      <p class="explainer"><span class="background-1">Background 1</span>&nbsp;&nbsp;&nbsp;<span class="background-2">Background 2</span>&nbsp;&nbsp;&nbsp;<span class="background-3">Background 3</span>&nbsp;&nbsp;&nbsp;<span class="background-4">Background 4</span></p>      
+    </div>
+    </div>
+  </div>
+</section> 
 
 <section>
   <div class="section_wrap">
@@ -149,16 +158,6 @@
     <div class="title-content">
       <h2>Typekit - custom fonts</h2> 
       <p class="explainer"><a href="https://typekit.com/" target="_blank">Typekit</a></p>      
-    </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div id="bg-changer" class="section_wrap">
-    <div class="title-content">
-      <h2>Reactions</h2> 
-      <p class="explainer"><span class="background-1">Background 1</span>&nbsp;&nbsp;&nbsp;<span class="background-2">Background 2</span>&nbsp;&nbsp;&nbsp;<span class="background-3">Background 3</span>&nbsp;&nbsp;&nbsp;<span class="background-4">Background 4</span></p>      
     </div>
     </div>
   </div>
