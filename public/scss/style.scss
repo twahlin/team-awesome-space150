@@ -236,10 +236,12 @@ html {
 
 body {
   background: url(../images/ruler.png) left top repeat-y;
+  padding-bottom: 40px;
 }
 
 section {
   padding: 100px 0 100px 0;
+  margin: 250px 0 250px 0;
 }
 
 .section_wrap {
@@ -536,19 +538,21 @@ a:hover {
 
 
 
-/*@-webkit-keyframes bot {
+@-webkit-keyframes bot {
     from { background-position: 0 0; }
     to { background-position: -1440px 0; }
-}*/
+}
 
   
 .robot-all-up-in-this {
- background: red url(../images/robot-sprite.png) no-repeat;
+ background: url(../images/robot-sprite.png) no-repeat;
  background-position: 0 0;
  height: 306px;
  width: 160px; 
  
-/* -webkit-animation: bot .8s steps(9, end) infinite;*/
+ margin: 0 auto;
+ 
+ -webkit-animation: bot 1s steps(9, end) infinite;
 }
 
 //------------------------------------------------------------------
